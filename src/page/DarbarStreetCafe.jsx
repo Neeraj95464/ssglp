@@ -1527,14 +1527,30 @@ Please confirm this order and delivery time. Thank you! 🙏`;
         <div className="container mx-auto px-4 py-4">
           <div className="flex justify-between items-center">
             <div className="flex items-center space-x-4">
-              <div className="text-3xl">🏪</div>
+              <div>
+                {/* <img
+                  src="/logo.png"   // put your logo file in the public/ folder
+                  alt="Shri Sahasra Gourmet LLP Logo"
+                  className="h-12 w-auto"
+                /> */}
+                {/* <div className="text-6xl mb-6 animate-bounce"> */}
+  <img
+    src="https://tse3.mm.bing.net/th/id/OIP.BPhqCOgk7UT7zGJfBEfdyAHaHa?rs=1&pid=ImgDetMain&o=7&rm=3"
+    alt="Shri Sahasra Gourmet LLP Logo"
+    className="h-20 w-auto mx-auto"
+  />
+{/* </div> */}
+
+             
+              </div>
               <div>
                 <h1 className="text-2xl font-bold">Shri Sahasra Gourmet LLP</h1>
                 <p className="text-sm opacity-90">
-                  Darbar Street Cafe Franchise • Bandalaguda Jagir
+                  Darbar Street - The Cafe • Bandalaguda Jagir
                 </p>
               </div>
             </div>
+
 
             <div className="flex items-center space-x-4">
               <button
@@ -1592,7 +1608,16 @@ Please confirm this order and delivery time. Thank you! 🙏`;
 
         <div className="relative container mx-auto px-4 py-20 text-center text-white">
           <div className="max-w-5xl mx-auto">
-            <div className="text-6xl mb-6 animate-bounce">🍵</div>
+            {/* <div className="text-6xl mb-6 animate-bounce">🍵</div> */}
+            <div className="text-6xl mb-6 animate-bounce">
+  <img
+    src="/logo.png"   // make sure logo.png is in the public/ folder
+    alt="Shri Sahasra Gourmet LLP Logo"
+    className="h-32 w-auto mx-auto"
+  />
+</div>
+
+
             <h2 className="text-4xl md:text-6xl font-bold mb-6">
               Welcome to Shri Sahasra Gourmet LLP
             </h2>
@@ -1709,11 +1734,10 @@ Please confirm this order and delivery time. Thank you! 🙏`;
               <button
                 key={key}
                 onClick={() => setActiveCategory(key)}
-                className={`px-4 py-3 rounded-full font-semibold transition-all duration-300 transform hover:scale-105 text-sm ${
-                  activeCategory === key
-                    ? "bg-gradient-to-r from-amber-500 to-orange-500 text-white shadow-lg"
-                    : "bg-white text-gray-700 hover:bg-gray-100 shadow-md"
-                }`}
+                className={`px-4 py-3 rounded-full font-semibold transition-all duration-300 transform hover:scale-105 text-sm ${activeCategory === key
+                  ? "bg-gradient-to-r from-amber-500 to-orange-500 text-white shadow-lg"
+                  : "bg-white text-gray-700 hover:bg-gray-100 shadow-md"
+                  }`}
               >
                 <span className="mr-2">{category.icon}</span>
                 {category.name}
@@ -1836,13 +1860,30 @@ Please confirm this order and delivery time. Thank you! 🙏`;
                 WhatsApp Direct Order
               </a>
             </div>
-            <div className="text-center">
+            {/* <div className="text-center">
               <MapPin className="w-8 h-8 mx-auto mb-4" />
               <h3 className="text-xl font-semibold mb-2">Our Location</h3>
               <p>Darbar Street Tea & Snacks</p>
               <p>Bandalaguda Jagir</p>
               <p>Hyderabad, Telangana</p>
-            </div>
+            </div> */}
+
+<div className="text-center">
+  <MapPin className="w-8 h-8 mx-auto mb-4" />
+  <h3 className="text-xl font-semibold mb-2">Our Location</h3>
+  <p>Darbar Street Tea & Snacks </p>
+   <p>Click Below for direction</p>
+  <a
+    href="https://maps.app.goo.gl/2ygFu4TBjqkaL9yw5"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="text-white underline hover:text-gray-300"
+  >
+    Bandalaguda Jagir, Hyderabad, Telangana
+  </a>
+</div>
+
+
             <div className="text-center">
               <Clock className="w-8 h-8 mx-auto mb-4" />
               <h3 className="text-xl font-semibold mb-2">Working Hours</h3>
@@ -1938,6 +1979,18 @@ Please confirm this order and delivery time. Thank you! 🙏`;
                       <p className="text-sm text-amber-700">
                         Bandalaguda Jagir, Hyderabad
                       </p>
+
+                      <p className="text-sm text-amber-700">
+                        <a
+                          href="https://maps.app.goo.gl/2ygFu4TBjqkaL9yw5"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="underline hover:text-amber-900"
+                        >
+                          Bandalaguda Jagir, Hyderabad
+                        </a>
+                      </p>
+
                     </div>
                   </div>
 
